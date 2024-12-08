@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph Meta Tags (untuk Facebook, WhatsApp, dll.) -->
+  <meta property="og:title" content="Zull Store - Toko Terbaik">
+  <meta property="og:description" content="Kunjungi Zull Store untuk produk terbaik dan harga terjangkau.">
+  <meta property="og:image" content="https://buypanel.zulkifly.fun/images/sc1.jpg">
+  <meta property="og:url" content="https://buypanel.zulkifly.fun">
+  <meta property="og:type" content="website">
+  <title>ZuLL STORE</title>
+  <link rel="stylesheet" href="website/css/styles.css">
+</head>
+<body>
+<header>
+  <center><h1>𝒁𝒖𝑳𝑳 𝑺𝑻𝑶𝑹𝑬</h1><div class="watermark">© 2024 ZuLL STORE</div></center>
+
+</header>
+  <video id="background-video" autoplay loop playsinline muted>
+        <source src="website/background/videos/video.webm" type="video/mp4">
+        <source src="website/background/videos/video.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+  <div id="landing-page">
+        <button onclick="startVideo()">Lanjutkan</button>
+    </div>
+  <div id="preloader">
+  <div class="spinner"></div>
+</div>
+  
+<nav>
+  <ul>
+    <li><a href="#about" onclick="scrollToSection('about')"></a></li>
+    <li><a href="#projects" onclick="scrollToSection('projects')"></a></li>
+    <li><a href="#contact" onclick="scrollToSection('contact')"></a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <center><p>𝑺𝒆𝒍𝒂𝒎𝒂𝒕 𝒅𝒂𝒕𝒂𝒏𝒈 𝒅𝒊 𝒁𝒖𝑳𝑳 𝑺𝑻𝑶𝑹𝑬! 𝑲𝒂𝒎𝒊 𝒎𝒆𝒏𝒚𝒆𝒅𝒊𝒂𝒌𝒂𝒏 𝒍𝒂𝒚𝒂𝒏𝒂𝒏 𝒑𝒂𝒏𝒆𝒍 𝒃𝒆𝒓𝒌𝒖𝒂𝒍𝒊𝒕𝒂𝒔 𝒅𝒆𝒏𝒈𝒂𝒏 𝒉𝒂𝒓𝒈𝒂 𝒕𝒆𝒓𝒋𝒂𝒏𝒈𝒌𝒂𝒖 𝒖𝒏𝒕𝒖𝒌 𝒌𝒆𝒃𝒖𝒕𝒖𝒉𝒂𝒏 𝑨𝒏𝒅𝒂.</p></center>
+</section>
+
+<section id="projects">
+  <center><h2>𝑷𝑨𝑵𝑬𝑳 𝑷𝑹𝑰𝑽𝑨𝑻𝑬</h2></center>
+  <div class="button-container">
+    <button id="toggle-product-btn" class="button" onclick="toggleProductPage()">Lihat Produk</button>
+    <a href="website/premium/index.html"
+      id="toggle-premium-btn" class="button" onclick="togglePremiunPage()">Get Premium</button>
+    </a>
+    <a id="login-panel-btn" href="https://world.panelpterodactyl.site" class="button">Login Ke Panel Pterodactyl</a>
+  </div>
+</section>
+<section id="product-page">
+  <center><h2>𝑷𝑨𝑵𝑬𝑳</h2></center>
+  <div class="product-list">
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 1">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 1 𝑮𝑩</h3>
+      <p><span class="harga">Rp1.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 1GB', 'Rp1.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 2">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 2 𝑮𝑩</h3>
+      <p><span class="harga">Rp3.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 2GB', 'Rp3.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 3">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 3 𝑮𝑩</h3>
+      <p><span class="harga">Rp4.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 3GB', 'Rp4.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 4">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 4 𝑮𝑩</h3>
+      <p><span class="harga">Rp5.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 4GB', 'Rp5.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 5">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 5 𝑮𝑩</h3>
+      <p><span class="harga">Rp6.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 5GB', 'Rp6.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 6">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 6 𝑮𝑩</h3>
+      <p><span class="harga">Rp7.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 6GB', 'Rp7.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 7">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 7 𝑮𝑩</h3>
+      <p><span class="harga">Rp8.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 7GB', 'Rp8.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 8">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 8 𝑮𝑩</h3>
+      <p><span class="harga">Rp9.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 8GB', 'Rp9.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 9">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 9 𝑮𝑩</h3>
+      <p><span class="harga">Rp10.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 9GB', 'Rp10.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel 10">
+      <center><h3>𝑷𝒂𝒏𝒆𝒍 10 𝑮𝑩</h3>
+      <p><span class="harga">Rp11.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel 10GB', 'Rp11.000')">Checkout</span></center>
+    </div>
+    <div class="product">
+      <img src="website/product/images/sc1.jpg" alt="Panel Unlimited">
+      <center><h3>𝑼𝑵𝑳𝑰𝑴𝑰𝑻𝑬𝑫</h3>
+      <p><span class="harga">Rp15.000</span></p>
+      <span class="button" onclick="showCheckoutForm('Panel Unlimited', 'Rp15.000')">Checkout</span></center>
+    </div>
+</div>
+</section>
+
+<div class="checkout-form" id="checkout-form">
+    <h2>Checkout Sekarang</h2>
+    <p id="selected-product" style="font-size: 1.2rem; color: #555;"></p>
+    
+    <form>
+        <div class="form-group">
+            <label for="name">Daftar Username: </label>
+            <input type="text" id="name" name="name" placeholder="Masukkan Username" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+        </div>
+
+        <button type="button" onclick="showPaymentInfo()">Lanjut ke Pembayaran</button>
+    </form>
+</div>
+
+<div class="payment-info" id="payment-info">
+  <h2>Pembayaran</h2>
+  <p>Silakan pilih metode pembayaran:</p>
+
+  <!-- Pilihan Pembayaran -->
+  <ul>
+    <li><button class="payment-method" onclick="selectPaymentMethod('QRIS')">QRIS</button></li>
+    <li><button class="payment-method" onclick="selectPaymentMethod('Transfer Bank')">Transfer Bank</button></li>
+    <li><button class="payment-method" onclick="selectPaymentMethod('DANA')">DANA</button></li>
+    <li><button class="payment-method" onclick="selectPaymentMethod('ShopeePay')">ShopeePay</button></li>
+  </ul>
+
+  <!-- Tampilkan QR Code atau Info Pembayaran Berdasarkan Pilihan -->
+  <div id="payment-details">
+    <p id="payment-description">Pilih metode pembayaran untuk melihat informasi lebih lanjut.</p>
+    <img id="payment-qr" src="website/payment/qr/qris.png" alt="QR Code Pembayaran" class="qr-code-img" style="display:none;">
+  </div>
+
+  <p id="countdown-timer" style="display:none;">Waktu tersisa: <span id="timer">30</span> detik</p>
+  <p><a id="whatsapp-link" href="#" class="button" onclick="refreshAfterPayment()" style="display: none;">Kirim Bukti Pembayaran</a></p>
+  <!--<p><a id="login-panel-link" href="https://world.panelpterodactyl.site" class="button" style="display: none;" target="_blank">Login ke Panel Pterodactyl</a></p>-->
+  <p id="countdown-message">Halaman akan direfresh dalam <span id="timer">30</span> detik.</p>
+</div>
+
+  <section id="contact">
+  <h2>𝙲𝙾𝙽𝚃𝙰𝙲𝚃</h2>
+  <ul>
+    <li>
+  <span class="akun-label">Email:</span>
+  <a href="mailto:zullstore12345@gmail.com" class="akun-address">zullstore12345@gmail.com</a>
+</li>
+    <li>
+  <span class="phone-label">WhatsApp:</span>
+  <a href="https://wa.me/6282191059164" class="phone-address" target="_blank">+62 821-9105-9164</a>
+</li>
+  </ul>
+</section>
+<script src="website/js/scripts.js"></script>
+</body>
+</html>
