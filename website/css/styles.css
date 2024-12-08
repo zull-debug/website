@@ -1,0 +1,621 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+html {
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth; /* Efek scroll smooth di seluruh halaman */
+}
+
+#login-panel-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#login-panel-section .button {
+    background-color: #007BFF;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-panel-section .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#landing-page {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        button {
+            padding: 10px 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+
+  .watermark {
+    position: relative;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #BE0000;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    pointer-events: none;
+}
+  
+    #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Sesuaikan warna */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.navbar {
+    position: fixed;
+    z-index: 1; /* Di atas video */
+    width: 100%;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    right: 100;
+    left: 0;
+    width: 100vw; /* Lebar penuh layar */
+    height: 100vh; /* Tinggi penuh layar */
+    object-fit: cover; /* Memastikan video tetap proporsional */
+    z-index: -1;
+    pointer-events: none;
+}
+.akun-label{
+   color: white;
+}
+
+.akun-address{
+    color: white;
+}
+
+.phone-label{
+    color: white;
+}
+
+.phone-address{
+    color: white;
+}
+
+.harga{
+    color: white;
+}
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #;
+      margin: 0;
+      padding: 0;
+}
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    h1, {
+      color: #FFFFFF;
+}
+
+#product-page h2 {
+  color: #960000; /* Warna merah */
+}
+
+#projects h2 {
+  color: #960000; /* Warna merah */
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+    background-color: #5C0000;
+    border: 2px solid #FF0000;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container .button {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #BE0000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button-container .button:hover {
+    background-color: #760000;
+}
+
+    /* Update section dengan transparansi dan efek blur */
+    section {
+      padding: 0.3rem;
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.1); /* Transparan sedikit agar background terlihat */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+      margin-bottom: 1rem;
+      backdrop-filter: blur(3px); /* Efek blur */
+      border-radius: 15px; 
+      position: relative; /* Pastikan posisi elemen diatur dengan benar */
+      z-index: 1; /* Menghindari overlap dengan background */
+    }
+
+    .product-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto; /* Menambahkan scrolling horizontal */
+  padding-bottom: 1rem;
+  padding-top: 1rem; /* Menambahkan padding atas untuk keseimbangan */
+  padding-left: 1rem; /* Menambahkan padding kiri */
+  scrollbar-width: thin; /* Menampilkan scrollbar yang lebih tipis */
+  scrollbar-color: #3498db #f1f1f1; /* Mengubah warna scrollbar */
+}
+
+.product-list::-webkit-scrollbar {
+  height: 8px; /* Menambahkan tinggi scrollbar */
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Menambahkan warna pada thumb scrollbar */
+  border-radius: 10px; /* Membuat ujung thumb lebih melengkung */
+}
+
+.product-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Warna latar belakang scrollbar */
+}
+
+.product {
+  flex: 0 0 auto; /* Mencegah elemen mengecil */
+  width: 180px; /* Lebar produk */
+  background-color: #760000; /* Warna latar belakang produk */
+  border-radius: 8px; /* Sudut produk yang melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan pada produk */
+  overflow: hidden; /* Menyembunyikan bagian gambar yang keluar */
+}
+
+.product img {
+  max-width: 100%; /* Membuat gambar mengisi kontainer produk */
+  height: auto; /* Menjaga proporsi gambar */
+}
+
+.product h3, .product p {
+  text-align: center; /* Menyusun teks di tengah */
+  margin: 0.5rem 0; /* Memberikan jarak antara teks dan elemen lain */
+}
+
+.button {
+  display: block;
+  background-color: #BE0000;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #960000; /* Efek hover untuk tombol */
+}
+
+   /* Kolom Pembayaran */
+.payment-info {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(145deg, #ffffff, #e0e0e0); /* Gradient background */
+  border-radius: 15px; /* Membulatkan sudut */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek 3D */
+  font-size: 16px;
+  color: #333;
+}
+/* Judul Pembayaran */
+.payment-info h2 {
+  font-size: 1.8rem;
+  color: #28a745; /* Warna hijau untuk judul */
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* Deskripsi */
+.payment-info p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+  /* Gambar QR Code */
+.qr-code-img {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+  
+  .qr-code-img:hover {
+  transform: scale(1.8); /* Zoom in QR Code saat hover */
+}
+  
+  /* Countdown Timer */
+#countdown-timer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #e74c3c; /* Warna merah untuk countdown */
+  text-align: center;
+  margin-bottom: 20px;
+}
+  
+  /* Pesan countdown refresh */
+#countdown-message {
+  font-size: 1rem;
+  text-align: center;
+  color: #999;
+}
+  
+.payment-info img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.payment-info .button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #BE0000;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.payment-info .button:hover {
+    background-color: #760000;
+}
+
+#countdown-timer {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  text-align: center;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.payment-method {
+  background-color: #BE0000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-method:hover {
+  background-color: #760000;
+}
+
+#payment-description {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#payment-qr {
+  display: none;
+  max-width: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    #product-page, .checkout-form, .payment-info {
+      display: none;
+    }
+
+    #product-page.active, .checkout-form.active, .payment-info.active {
+      display: block;
+    }
+     #product-page {
+  display: none; /* Sembunyikan produk secara default */
+}
+
+     #product-page.active {
+  display: block; /* Tampilkan produk ketika aktif */
+}
+
+  /* Efek fade-in untuk form checkout */
+    .checkout-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.checkout-form h2 {
+    color: #760000; /* Ganti dengan warna sesuai keinginan */
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    -webkit-background-clip: text;
+    
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #760000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    width: 100%;
+    background-color: #BE0000;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #760000;
+}
+
+  .notification {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7fa;
+    border-left: 5px solid #760000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification .icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 1rem;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+  
+  #selected-product {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#selected-product .icon {
+    font-size: 1.5rem;
+    color: #760000;
+}
+
+/* Kolom Contact */
+#contact {
+  padding: 20px;
+  max-width: 600px; /* Kurangi ukuran maksimal */
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparansi lebih cerah */
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 1); /* Bayangan lembut */
+  backdrop-filter: blur(5px); /* Blur yang lebih kuat */
+  border-radius: 20px; /* Membulatkan sudut lebih besar */
+  text-align: center; /* Pusatkan teks */
+  color: #fff; /* Warna teks putih */
+}
+
+#contact ul {
+  padding: 0;
+}
+
+#contact li {
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.3); /* Background gelap transparan */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; /* Susun secara vertikal */
+  align-items: center;
+}
+
+#contact h2 {
+  color: #000000; /* Warna biru */
+}
+
+/* Label Email dan WhatsApp */
+/* Ubah warna label Email dan WhatsApp */
+.akun-label, .phone-label {
+    font-weight: bold;
+    color: #ffcc00; /* Warna kuning terang */
+}
+
+/* Ubah warna alamat Email dan WhatsApp */
+.akun-address, .phone-address {
+    color: #00ffcc; /* Warna cyan */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efek hover untuk Email dan WhatsApp */
+.akun-address:hover, .phone-address:hover {
+    color: #ff6600; /* Warna oranye saat hover */
+}
+
+/* Tambahkan ikon Email di depan */
+.akun-address::before {
+    content: "📧 "; /* Ikon Email */
+}
+
+/* Tambahkan ikon WhatsApp di depan */
+.phone-address::before {
+    content: "📱 "; /* Ikon WhatsApp */
+}
+
+/* Efek hover pada item */
+#contact li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px); /* Sedikit mengangkat saat hover */
+  transition: all 0.3s ease;
+}
+  
+/* Responsive design: memastikan tampilan bagus di perangkat kecil */
+@media (max-width: 600px) {
+  #contact {
+    padding: 15px;
+    max-width: 90%;
+  }
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+  #contact li {
+    font-size: 0.9rem;
+  }
+}
+  .akun-label, .phone-label {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling untuk link */
+a.akun-address, a.phone-address {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: #3498db; /* Warna biru */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a.akun-address:hover, a.phone-address:hover {
+  color: #2980b9; /* Warna saat hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}
